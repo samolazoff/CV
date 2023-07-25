@@ -1,21 +1,10 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="style/main.css")
-        title CV of SAMOLAZOFF
+    include ../components/head/head.pug
     body
         .wrap.cv
-            header.cv-header
-                logo.cv-logo
-                    h1 Samalazau Raman
-                nav.cv-nav
-                    ul.nav-items
-                        li.nav-item 
-                            a.nav-item__link
-            main.cv-content
+            include ../components/header/header.pug
+            main.cv-content.container
                 section.cv-presentation
                     img.cv-presentation__img(src="", alt="") 
                     .cv-presentation-box
@@ -31,10 +20,14 @@ html(lang="en")
                     h2.title-block Skills
                     ul.cv-skills-items 
                         li.cv-skills__item HTML
+                section.cv-projects
+                    h2.title-block My Projects
+                    ul.cv-projects-items 
+                        li.cv-projects__item HTML
                 section.cv-contacts
                     img.cv-contacts__img(src="", alt="")
                     .cv-contacts-box
                         h2.title-block Skills
                         ul.cv-contacts-items 
                             li.cv-contacts__item HTML
-            footer.cv-footer
+            footer.cv-footer.container
