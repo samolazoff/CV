@@ -1,0 +1,17 @@
+.nav-items
+    @include flex(row, flex-end, center)
+    gap: 20px
+.nav-item
+    padding: 8px 15px
+    border: 1px $secondary-color solid
+    border-radius: 15px
+    font-size: 1.2em
+    text-transform: uppercase
+    color: $primary-color-txt
+    &:hover
+        border-color: $primary-color-dark
+        background-color: $primary-color-dark
+        color: $divider-color-txt
+        -webkit-box-shadow: 7px -5px 11px -3px rgba(179, 229, 252, 0.2)
+        -moz-box-shadow: 7px -5px 11px -3px rgba(179, 229, 252, 0.2)
+        box-shadow: 7px -5px 11px -3px rgba(179, 229, 252, 0.2)
