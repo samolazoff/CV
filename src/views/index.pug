@@ -4,27 +4,23 @@ html(lang="en")
     body
         .wrap.cv
             include ../components/header/header.pug
-            main.cv-content.container
-                section.cv-presentation
-                    img.cv-presentation__img(src="", alt="") 
-                    .cv-presentation-box
-                        h2.title-block  Presentation
-                        p.cv-presentation__txt Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam numquam ipsam at provident tempore asperiores dignissimos? Voluptates laudantium quo qui ipsam adipisci voluptatum, doloribus accusantium blanditiis est ex repellendus laboriosam.
-                section.cv-about-me
+            main.cv-content
+                include ../components/presentation/presentation.pug
+                section.cv-about-me.container
                     .cv-about-me-box 
                         h2.title-block About Me 
                         ul.cv-about-me-items 
                             li.cv-about-me__item Fdsf df
                         img.cv-about-me__img(src="", alt="")
-                section.cv-skills
+                section.cv-skills.container
                     h2.title-block Skills
                     ul.cv-skills-items 
                         li.cv-skills__item HTML
-                section.cv-projects
+                section.cv-projects.container
                     h2.title-block My Projects
                     ul.cv-projects-items 
                         li.cv-projects__item HTML
-                section.cv-contacts
+                section.cv-contacts.container
                     img.cv-contacts__img(src="", alt="")
                     .cv-contacts-box
                         h2.title-block Skills

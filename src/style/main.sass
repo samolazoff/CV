@@ -1,14 +1,24 @@
 @import var
 @import mixins
 @import  reset
-@import ../components/header/header
 body
     font-size: 18px
+a
+    cursor: pointer
 .wrap
    width: 100%
 .container
     margin: 0 auto
     padding: 0 10px
     max-width: 1200px
-a
-    cursor: pointer
+.cv-content
+    padding: 10px
+.title-block
+    margin-bottom: 20px
+    font-size: 2.5em
+.txt_dark
+    color: $secondary-color-txt
+.main-mt
+    margin-top: 50px
+@import ../components/header/header
+@import ../components/presentation/presentation
