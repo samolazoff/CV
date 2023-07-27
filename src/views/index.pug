@@ -6,12 +6,7 @@ html(lang="en")
             include ../components/header/header.pug
             main.cv-content
                 include ../components/presentation/presentation.pug
-                section.cv-about-me.container
-                    .cv-about-me-box 
-                        h2.title-block About Me 
-                        ul.cv-about-me-items 
-                            li.cv-about-me__item Fdsf df
-                        img.cv-about-me__img(src="", alt="")
+                include ../components/about/about.pug
                 section.cv-skills.container
                     h2.title-block Skills
                     ul.cv-skills-items 
@@ -23,7 +18,7 @@ html(lang="en")
                 section.cv-contacts.container
                     img.cv-contacts__img(src="", alt="")
                     .cv-contacts-box
-                        h2.title-block Skills
+                        h2.title-block Contacts
                         ul.cv-contacts-items 
                             li.cv-contacts__item HTML
             footer.cv-footer.container
