@@ -1,0 +1,14 @@
+-var contacts = [["Instagram", "https://img.icons8.com/?size=512&id=32323&format=png", "_supersonyk_","https://www.instagram.com/_supersonyk_/", true], ["Email", "https://img.icons8.com/?size=512&id=3AYCSzCO85Qw&format=png", "samolazov.roman.alex@gmail.com", "#", false], ["Telegram", "https://img.icons8.com/?size=512&id=63306&format=png", "@samolazoff", "#", false], ["GitHub", "https://img.icons8.com/?size=512&id=AZOZNnY73haj&format=png", "@samolazoff", "https://github.com/samolazoff", true], ["linkedin", "https://img.icons8.com/?size=512&id=13930&format=png", "Raman Samalazau", "https://www.linkedin.com/in/raman-samalazau-a191a9285", true ] ]
+
+ul.cv-contacts-items
+    each contact in contacts
+        if contact[4]
+            li.cv-contacts__item
+                a(href=contact[3])
+                    img(src=contact[1], alt=contact[0] title=contact[0])
+                    span=contact[2] 
+        else 
+            li.cv-contacts__item
+                img(src=contact[1], alt=contact[0] title=contact[0])
+                span=contact[2]
+                            
