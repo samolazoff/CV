@@ -170,3 +170,11 @@ a {
 .cv-skills__item img {
   width: 100%;
 }
+
+.cv-projects {
+  background-color: #03a9f4;
+  color: #FFFFFF;
+}
+.cv-projects-items {
+  padding-bottom: 50px;
+}
