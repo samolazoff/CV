@@ -1,5 +1,13 @@
+- var prjs = [["Organick", "Training project", "static/img/organick-skrin.png", "https://unique-cuchufli-524688.netlify.app/"], ["Organick", "Training project", "static/img/organick-skrin.png", "https://unique-cuchufli-524688.netlify.app/"]] 
+
 section.cv-projects.main-mt
     .container.main-pt 
         h2.title-block My Projects
         ul.cv-projects-items.main-pt 
-            li.cv-projects__item It will be late
+            each prj in prjs 
+                li.cv-projects__item
+                    a(href=prj[3])
+                        .title-box 
+                            h3= prj[0]
+                            span= prj[1]
+                        img(src= prj[2], alt= prj[0] title= prj[0])

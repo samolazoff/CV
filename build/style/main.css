@@ -176,7 +176,36 @@ a {
   color: #FFFFFF;
 }
 .cv-projects-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
   padding-bottom: 50px;
+}
+.cv-projects__item {
+  width: 540px;
+}
+.cv-projects__item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  border: 3px solid #607D8B;
+  border-radius: 25px;
+}
+.cv-projects__item a .title-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+.cv-projects__item a img {
+  width: 70%;
+}
+.cv-projects__item:hover {
+  color: #607D8B;
 }
 
 .cv-contacts__item {
@@ -202,6 +231,13 @@ a {
   width: 50px;
 }
 
+.cv-contacts .title-block {
+  text-align: center;
+}
+
+.cv-footer {
+  margin-bottom: 50px;
+}
 .cv-footer .container {
   display: flex;
   flex-direction: row;
