@@ -22,6 +22,10 @@ a:active {
   background-color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 18px;
 }

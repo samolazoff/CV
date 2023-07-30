@@ -1,7 +1,7 @@
-- var links = ['about me', 'skills', 'projects', 'contacts']
+- var links = [['about me','#about'], ['skills','#skills'], ['projects','#projects'], ['contacts','#contacts']]
 nav.cv-nav
     include ../burger/burger
     ul.nav-items
         each link in links
             li.nav-item 
-                a.nav-item__link= link
+                a.nav-item__link(href= link[1])= link[0]
